@@ -3,6 +3,15 @@ spring:
     username: admin
     password: admin
     url: jdbc:postgresql://localhost:5432/kafka_consumer_db
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    consumer:
+      group-id: order-consumers
+      auto-offset-reset: earliest
+      bootstrap-servers: localhost:9092
+  jpa:
+    hibernate:
+      ddl-auto: update
 
 server:
   port: 8088
