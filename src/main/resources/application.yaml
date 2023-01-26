@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    username: admin
+    password: admin
+    url: jdbc:postgresql://localhost:5432/kafka_consumer_db
+
+server:
+  port: 8088
